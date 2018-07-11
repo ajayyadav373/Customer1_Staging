@@ -5,7 +5,7 @@ resource "azurerm_resource_group" "rg_test" {
 }
 
 resource "azurerm_virtual_network" "vnet_test" {
-  name                = "${var.resource_group}vnet"
+  name                = "Test_vnet"
   location            = "${var.location}"
   address_space       = ["10.0.0.0/16"]
   resource_group_name = "${azurerm_resource_group.rg_test.name}"
