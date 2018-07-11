@@ -1,6 +1,6 @@
 
 resource "azurerm_resource_group" "rg_test" {
-  name     = "${var.resource_group}"
+  name     = "Test_ajay_rg"
   location = "${var.location}"
 }
 
